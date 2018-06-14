@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "FirstName": {
+      "type": "text"
+    },
+    "LastName": {
+      "type": "text"
+    },
+    "Designation": {
+      "type": "text"
+    },
+    "Salary": {
+      "type": "integer"
+    },
+    "DateOfJoining": {
+      "type": "date",
+      "format": "yyyy-MM-dd"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Gender": {
+      "type": "keyword"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "MaritalStatus": {
+      "type": "keyword"
+    },
+    "Interests": {
+      "type": "text"
+    }
+  }
+}

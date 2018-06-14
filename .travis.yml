@@ -1,0 +1,22 @@
+language: java
+
+jdk:
+ - oraclejdk8
+
+deploy:
+ provider: releases
+ api-key: $GITHUB_API_KEY
+ file: "target/releases/*.zip"
+ skip_cleanup: true
+ name: "Current snapshot"
+ body: "Current plugin snapshot"
+ prerelease: true
+ overwrite: true
+ file_glob: true
+ tag_name: latest
+ on:
+  branch:
+   - master
+   - develop
+
+script: "mvn clean install package"
